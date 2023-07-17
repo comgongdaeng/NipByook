@@ -7,11 +7,11 @@ public class timer : MonoBehaviour
 {
     
     public Text[] text_time; // 시간을 표시할 text
-    float time; // 시간.
+    public static float time; // 시간.
 
     private void Start()
     {
-        time = 480; //8분으로 설정
+        time = 60; //8분으로 설정
     }
 
     void Update() 
