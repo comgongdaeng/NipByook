@@ -4,31 +4,38 @@ using UnityEngine;
 
 public class JumpingChess : MonoBehaviour
 {
+    float originY;
+
+    public float turningPoint;
+    public bool turned;
+
+    public float chessSpeed;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+       originY = -1;
     }
 
     void upDown() {
-        float currentPositionY = transform.position.y;
+        float currentY = transform.position.y;
 
-        if (currentPositionY >= initPositionY)
+        if (currentY <= originY)
         {
-            turnSwitch = false;
+            turned = false;
         }
-        else if (currentPositionY <= turningPoint)
+        else if (currentY >= turningPoint)
         {
-            turnSwitch = true;
+            turned = true;
         }
 
-        if (turnSwitch)
+        if (turned)
         {
-            transform.position = transform.position + new Vector3(0, 1, 0) * moveSpeed * Time.deltaTime;
+            transform.position = transform.position + new Vector3(0, -1, 0) * chessSpeed * Time.deltaTime;
         }
         else
         {
-            transform.position = transform.position + new Vector3(0, -1, 0) * moveSpeed * Time.deltaTime;
+            transform.position = transform.position + new Vector3(0, 1, 0) * chessSpeed * Time.deltaTime;
         }
     }
 
