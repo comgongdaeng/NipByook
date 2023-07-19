@@ -9,6 +9,7 @@ public class GrabbedNotif : MonoBehaviour
 
     public AudioClip grabbedClip;
     public AudioClip droppedClip;
+    public DoorController DC;
 
     // Start is called before the first frame update
     void Start()
@@ -25,10 +26,12 @@ public class GrabbedNotif : MonoBehaviour
             if (grabbableObject.isGrabbed)
             {
                 OnGrabbedEvent();
+                DC.gotKey = true;
             }
             else
             {
                 OnDroppedEvent();
+                DC.gotKey = false;
             }
         }
     }

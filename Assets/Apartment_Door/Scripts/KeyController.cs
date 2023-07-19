@@ -7,9 +7,8 @@ public class KeyController : MonoBehaviour
 {
     BoxCollider keyCollider;
     Rigidbody keyRB;
-    public Text txtToDisplay;
+    //public Text txtToDisplay;
     public DoorController DC;
-
     /// <summary>
     /// Incase user forgets to uncheck isTrigger in box collider
     /// This sets them automatically
@@ -21,14 +20,21 @@ public class KeyController : MonoBehaviour
         keyCollider.isTrigger = true;
     }
 
+
+
     private void OnTriggerEnter(Collider other)
     {
+        /*if(OVRInput.GetDown(OVRInput.Button.One) &&OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) && OVRInput.Get(OVRInput.Axis1D.SecondaryHandTrigger))
+        {   DC.gotKey = true;
+        } else DC.gotKey = false;*/
+
+    /*
         if (other.CompareTag("Player"))
         {
             DC.gotKey = true;
-            txtToDisplay.gameObject.SetActive(true);
-            txtToDisplay.text = "Key Acquired";
+            //txtToDisplay.gameObject.SetActive(true);
+            //txtToDisplay.text = "Key Acquired";
             this.gameObject.SetActive(false);
-        }
+        }*/
     }
 }
