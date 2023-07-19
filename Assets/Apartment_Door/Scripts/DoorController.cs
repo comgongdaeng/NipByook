@@ -5,8 +5,9 @@ public class DoorController : MonoBehaviour
 {
     public bool keyNeeded = false;              //Is key needed for the door
     public bool gotKey;                  //Has the player acquired key
+    public bool gotDoor; 
     public GameObject keyGameObject;            //If player has Key,  assign it here
-    public GameObject txtToDisplay;             //Display the information about how to close/open the door
+    //public GameObject txtToDisplay;             //Display the information about how to close/open the door
 
     private bool playerInZone;                  //Check if the player is in the zone
     private bool doorOpened;                    //Check if door is currently opened or not
@@ -33,7 +34,7 @@ public class DoorController : MonoBehaviour
         playerInZone = false;                   //Player not in zone
         doorState = DoorState.Closed;           //Starting state is door closed
 
-        txtToDisplay.SetActive(false);
+        //txtToDisplay.SetActive(false);
 
         doorAnim = transform.parent.gameObject.GetComponent<Animation>();
         doorCollider = transform.parent.gameObject.GetComponent<BoxCollider>();
@@ -48,15 +49,25 @@ public class DoorController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        txtToDisplay.SetActive(true);
+        //txtToDisplay.SetActive(true);
         playerInZone = true;
+    }
+
+    private void OnCollisionStay(Collision col) {
+        if ( col.collider.gameObject.tag == "rust_key") {
+        Debug.Log("tag: "+ col.collider.gameObject.tag);
+        gotKey = true;
+        //Debug.Log("gotKey");
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
         playerInZone = false;
-        txtToDisplay.SetActive(false);
+        //txtToDisplay.SetActive(false);
     }
+
+
 
     private void Update()
     {
@@ -65,25 +76,27 @@ public class DoorController : MonoBehaviour
         {
             if (doorState == DoorState.Opened)
             {
-                txtToDisplay.GetComponent<Text>().text = "Press 'E' to Close";
+                //txtToDisplay.GetComponent<Text>().text = "Press 'E' to Close";
                 doorCollider.enabled = false;
             }
             else if (doorState == DoorState.Closed || gotKey)
             {
-                txtToDisplay.GetComponent<Text>().text = "Press 'E' to Open";
+                //txtToDisplay.GetComponent<Text>().text = "Press 'E' to Open";
                 doorCollider.enabled = true;
             }
             else if (doorState == DoorState.Jammed)
             {
-                txtToDisplay.GetComponent<Text>().text = "Needs Key";
+                //txtToDisplay.GetComponent<Text>().text = "Needs Key";
                 doorCollider.enabled = true;
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && playerInZone)
+        
+        //손이랑 문이랑 collision
+        if(OVRInput.GetDown(OVRInput.Button.One) && playerInZone)// //A btn if (Input.GetKeyDown(KeyCode.E) && playerInZone)
         {
             doorOpened = !doorOpened;           //The toggle function of door to open/close
-
+            Debug.Log(gotKey);
             if (doorState == DoorState.Closed && !doorAnim.isPlaying)
             {
                 if (!keyNeeded)
@@ -98,7 +111,7 @@ public class DoorController : MonoBehaviour
                     doorState = DoorState.Jammed;
                 }
             }
-
+            //열쇠랑 문이랑 collision
             if (doorState == DoorState.Closed && gotKey && !doorAnim.isPlaying)
             {
                 doorAnim.Play("Door_Open");
