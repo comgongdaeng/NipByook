@@ -5,22 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
-    public void GoLevel1()
+    public static void GoLevel1()
     {
         SceneManager.LoadScene("Level1");
     }
 
-    public void GoLevel2()
+    public static void GoLevel2()
     {
         SceneManager.LoadScene("Level2");
     }
 
-    public void GoLevel3()
+    public static void GoLevel3()
     {
         SceneManager.LoadScene("Level3");
     }
 
-    public void GoGameClear()
+    public static void GoGameClear()
     {
         SceneManager.LoadScene("GameClear");
     }

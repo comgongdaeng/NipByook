@@ -711,6 +711,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8160725675885458173, guid: 39868262e399a4c48bf3739708613d2b, type: 3}
+      propertyPath: levelUp
+      value: 
+      objectReference: {fileID: 8300000, guid: cfed0d8572f510941963632474adb029, type: 3}
+    - target: {fileID: 8160725675885458173, guid: 39868262e399a4c48bf3739708613d2b, type: 3}
+      propertyPath: WrongKey
+      value: 
+      objectReference: {fileID: 8300000, guid: 9a4f8c6a676ea9c4f95a9942dd20bf1b, type: 3}
+    - target: {fileID: 8160725675885458173, guid: 39868262e399a4c48bf3739708613d2b, type: 3}
       propertyPath: txtToDisplay
       value: 
       objectReference: {fileID: 1005696477}
@@ -7726,7 +7734,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: 0.5}
+  m_AnchoredPosition: {x: -1.5, y: 0.5}
   m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &526567329
@@ -7762,7 +7770,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 4
+  m_Text: 
 --- !u!222 &526567330
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9903,7 +9911,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.5, y: 0.5}
+  m_AnchoredPosition: {x: 2, y: 0.5}
   m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &911567995
@@ -12981,8 +12989,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grabbableObject: {fileID: 1632118111}
-  grabbedClip: {fileID: 8300000, guid: 494bd1721199a40c5a79fa3011793556, type: 3}
-  droppedClip: {fileID: 8300000, guid: 354c37cd61ec24bbcbbc7921d0a71bc1, type: 3}
+  grabbedClip: {fileID: 8300000, guid: 4846ecf955d090e4dbda8a00eea7de5a, type: 3}
+  droppedClip: {fileID: 8300000, guid: 699db85e81c57234f80d2c1d665c0a96, type: 3}
   DC: {fileID: 174243375}
 --- !u!4 &1632663391 stripped
 Transform:
@@ -13304,7 +13312,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 4
+  m_Text: 
 --- !u!222 &1678961043
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13808,6 +13816,7 @@ MonoBehaviour:
   text_time:
   - {fileID: 526567329}
   - {fileID: 1678961042}
+  Gameover: {fileID: 8300000, guid: 07a34d0fa99f4f446b44f46d54a6f5ca, type: 3}
 --- !u!1001 &1786131670
 PrefabInstance:
   m_ObjectHideFlags: 0

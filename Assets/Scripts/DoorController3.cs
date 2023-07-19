@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class DoorController : MonoBehaviour
+public class DoorController3 : MonoBehaviour
 {
     public bool keyNeeded = false;              //Is key needed for the door
     public bool gotKey;                  //Has the player acquired key
@@ -121,7 +121,7 @@ public class DoorController : MonoBehaviour
                 doorAnim.Play("Door_Open");
                 doorState = DoorState.Opened;
                 AudioSource.PlayClipAtPoint(levelUp, Vector3.zero);
-                SceneController.GoLevel2();
+                SceneController.GoGameClear();
 
 
             }
