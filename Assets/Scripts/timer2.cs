@@ -23,7 +23,7 @@ public class timer2 : MonoBehaviour
             text_time[0].text = ((int)time / 60%60).ToString();
             text_time[1].text = ((int)time % 60 ).ToString();
 
-            if(time ==0) 
+            if(time <= 0) 
             {
             SceneController.GoLevel1();
             AudioSource.PlayClipAtPoint(Gameover, Vector3.zero);

@@ -7547,7 +7547,7 @@ MonoBehaviour:
   text_time:
   - {fileID: 2029337530}
   - {fileID: 1229168793}
-  Gameover: {fileID: 0}
+  Gameover: {fileID: 8300000, guid: 07a34d0fa99f4f446b44f46d54a6f5ca, type: 3}
 --- !u!1001 &1160278722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8880,7 +8880,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11273,7 +11273,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8392e0677a91fc6459c1468853ed3db8, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
