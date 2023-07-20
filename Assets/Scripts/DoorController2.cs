@@ -121,7 +121,7 @@ public class DoorController2 : MonoBehaviour
                 doorAnim.Play("Door_Open");
                 doorState = DoorState.Opened;
                 AudioSource.PlayClipAtPoint(levelUp, Vector3.zero);
-                SceneController.GoLevel2();
+                SceneController.GoLevel3();
 
 
             }

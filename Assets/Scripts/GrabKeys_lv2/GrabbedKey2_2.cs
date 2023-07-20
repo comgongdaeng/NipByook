@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GrabbedKey5 : MonoBehaviour
+public class GrabbedKey2_2 : MonoBehaviour
 {
     //public OVRGrabbable[] grabbableObject = new OVRGrabbable[6];
     public OVRGrabbable grabbableObject;
@@ -11,7 +11,7 @@ public class GrabbedKey5 : MonoBehaviour
 
     public AudioClip grabbedClip;
     public AudioClip droppedClip;
-    public DoorController3 DC;
+    public DoorController2 DC;
     
 
     // Start is called before the first frame update
@@ -31,7 +31,7 @@ public class GrabbedKey5 : MonoBehaviour
                 {
                     OnGrabbedEvent();
                     Debug.Log("First Okay");
-                    if(realKey.keys[5].value == true) {DC.gotKey = true;
+                    if(realKey_l2.keys_2[2].value == true) {DC.gotKey = true;
                     Debug.Log("Second OK");}
                     Debug.Log("Third OK");
                 }
@@ -42,8 +42,6 @@ public class GrabbedKey5 : MonoBehaviour
                 }
             }
         
-        
-
         
     }
 

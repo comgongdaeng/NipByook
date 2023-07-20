@@ -727,7 +727,7 @@ MonoBehaviour:
   grabbableObject: {fileID: 139412504}
   grabbedClip: {fileID: 8300000, guid: 4846ecf955d090e4dbda8a00eea7de5a, type: 3}
   droppedClip: {fileID: 8300000, guid: 699db85e81c57234f80d2c1d665c0a96, type: 3}
-  DC: {fileID: 597381932}
+  DC: {fileID: 1634932702}
 --- !u!1 &164812045
 GameObject:
   m_ObjectHideFlags: 0
@@ -983,8 +983,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabbableObject: {fileID: 174785047}
   grabbedClip: {fileID: 8300000, guid: 4846ecf955d090e4dbda8a00eea7de5a, type: 3}
-  droppedClip: {fileID: 0}
-  DC: {fileID: 597381932}
+  droppedClip: {fileID: 8300000, guid: 699db85e81c57234f80d2c1d665c0a96, type: 3}
+  DC: {fileID: 1634932702}
 --- !u!1 &206159653
 GameObject:
   m_ObjectHideFlags: 0
@@ -2919,7 +2919,7 @@ MonoBehaviour:
   grabbableObject: {fileID: 734254086}
   grabbedClip: {fileID: 8300000, guid: 4846ecf955d090e4dbda8a00eea7de5a, type: 3}
   droppedClip: {fileID: 8300000, guid: 699db85e81c57234f80d2c1d665c0a96, type: 3}
-  DC: {fileID: 597381932}
+  DC: {fileID: 1634932702}
 --- !u!1001 &750807647
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3061,7 +3061,7 @@ MonoBehaviour:
   grabbableObject: {fileID: 750807652}
   grabbedClip: {fileID: 8300000, guid: 4846ecf955d090e4dbda8a00eea7de5a, type: 3}
   droppedClip: {fileID: 8300000, guid: 72e37686c6837804ab84e2f347c8e3ee, type: 3}
-  DC: {fileID: 597381932}
+  DC: {fileID: 1634932702}
 --- !u!1001 &823846453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3577,7 +3577,6 @@ GameObject:
   m_Component:
   - component: {fileID: 881664885}
   - component: {fileID: 881664884}
-  - component: {fileID: 881664886}
   m_Layer: 0
   m_Name: keys
   m_TagString: Untagged
@@ -3618,22 +3617,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &881664886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 881664883}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72822fea0019fe04689c79ca1fbb9e14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grabbableObject: {fileID: 0}
-  grabbedClip: {fileID: 8300000, guid: 4846ecf955d090e4dbda8a00eea7de5a, type: 3}
-  droppedClip: {fileID: 8300000, guid: 699db85e81c57234f80d2c1d665c0a96, type: 3}
-  DC: {fileID: 597381932}
 --- !u!1001 &895614921
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7565,7 +7548,7 @@ MonoBehaviour:
   grabbableObject: {fileID: 1591603842}
   grabbedClip: {fileID: 8300000, guid: 4846ecf955d090e4dbda8a00eea7de5a, type: 3}
   droppedClip: {fileID: 8300000, guid: 699db85e81c57234f80d2c1d665c0a96, type: 3}
-  DC: {fileID: 597381932}
+  DC: {fileID: 1634932702}
 --- !u!1001 &1598328553
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8931,7 +8914,7 @@ MonoBehaviour:
   grabbableObject: {fileID: 1804292310}
   grabbedClip: {fileID: 8300000, guid: 4846ecf955d090e4dbda8a00eea7de5a, type: 3}
   droppedClip: {fileID: 8300000, guid: 699db85e81c57234f80d2c1d665c0a96, type: 3}
-  DC: {fileID: 597381932}
+  DC: {fileID: 1634932702}
 --- !u!1001 &1809090264
 PrefabInstance:
   m_ObjectHideFlags: 0

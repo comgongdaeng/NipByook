@@ -11,7 +11,7 @@ public class GrabbedKey4 : MonoBehaviour
 
     public AudioClip grabbedClip;
     public AudioClip droppedClip;
-    public DoorController DC;
+    public DoorController3 DC;
     
 
     // Start is called before the first frame update
@@ -32,7 +32,7 @@ public class GrabbedKey4 : MonoBehaviour
                     OnGrabbedEvent();
                     Debug.Log("First Okay");
                     if(realKey.keys[4].value == true) {DC.gotKey = true;
-                    Debug.Log("Second OK");}
+                    Debug.Log("Second OK"+DC.gotKey);}
                     Debug.Log("Third OK");
                 }
                 else

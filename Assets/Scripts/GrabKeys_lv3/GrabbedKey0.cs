@@ -11,7 +11,7 @@ public class GrabbedKey0 : MonoBehaviour
 
     public AudioClip grabbedClip;
     public AudioClip droppedClip;
-    public DoorController DC;
+    public DoorController3 DC;
     
 
     // Start is called before the first frame update
