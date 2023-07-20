@@ -12,7 +12,7 @@ public class timer2 : MonoBehaviour
 
     private void Start()
     {
-        time = 120; //2분으로 설정
+        time = 180; //3분으로 설정
     }
 
     void Update() 

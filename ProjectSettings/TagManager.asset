@@ -7,6 +7,7 @@ TagManager:
   - RoomLight
   - SamplesInfoPanel
   - rust_key
+  - User
   layers:
   - Default
   - TransparentFX

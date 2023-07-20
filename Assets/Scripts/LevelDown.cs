@@ -6,15 +6,16 @@ using UnityEngine.SceneManagement;
 public class LevelDown : MonoBehaviour
 {
     // Update is called once per frame
-    void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
+    Debug.Log("Trigger with " + other.gameObject.tag);
         if(SceneManager.GetActiveScene().name == "Level1"){
-            if(collision.gameObject.name == "User"){
+            if(other.gameObject.tag == "User"){
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
         }
         else {
-            if(collision.gameObject.name == "User"){
+            if(other.gameObject.tag == "User"){
                 SceneController.GoLevel1();
             }
         }

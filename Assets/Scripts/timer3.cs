@@ -12,7 +12,7 @@ public class timer3 : MonoBehaviour
 
     private void Start()
     {
-        time = 60; //2분으로 설정
+        time = 300; //1분으로 설정
     }
 
     void Update() 
@@ -23,7 +23,7 @@ public class timer3 : MonoBehaviour
             text_time[0].text = ((int)time / 60%60).ToString();
             text_time[1].text = ((int)time % 60 ).ToString();
 
-            if(time ==0) 
+            if(time <=0) 
             {
             SceneController.GoLevel1();
             AudioSource.PlayClipAtPoint(Gameover, Vector3.zero);

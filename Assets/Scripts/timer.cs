@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class timer : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class timer : MonoBehaviour
 
     private void Start()
     {
-        time = 20; //2분으로 설정
+        time = 60; //1분으로 설정
     }
 
     void Update() 
@@ -23,9 +24,9 @@ public class timer : MonoBehaviour
             text_time[0].text = ((int)time / 60%60).ToString();
             text_time[1].text = ((int)time % 60 ).ToString();
 
-            if(time ==0) 
+            if(time <=0) 
             {
-            SceneController.GoLevel1();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             AudioSource.PlayClipAtPoint(Gameover, Vector3.zero);
 
             }
