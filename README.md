@@ -1,4 +1,4 @@
-# NipByook🍑
+# Vivid Nightmare
 
 ## 🎮 게임 소개
 **"Vivid Nightmare", VR escape game**<br>
@@ -14,7 +14,7 @@ Good Luck!
 개발환경: 유니티 Unity 2021.3.27f1<br>
 기기: 오큘러스 퀘스트 2<br>
 
-## Made By
+## Made By(Team NipByook🍑)
 👤 comgongdaeng (comgongdaeng)
 
 Github: @comgongdaeng
@@ -28,11 +28,13 @@ Github: @Gamddalki
 Github: @cham1ng
 
 ## 🎬 Scene
-### main
+### Main 👻
 ![image](https://github.com/comgongdaeng/NipByook/assets/109388787/efc8de2e-6bdc-4890-9b97-2f740c2800bf)
-### level 1
+### level 1 ☃
 한 개의 열쇠를 찾아 문을 열고 나가기. 캔디케인을 조심할 것
-### level 2
+### level 2 🌵
 세 개의 열쇠 중 하나의 진짜 열쇠를 찾아 문을 열고 나가기. 바위를 조심할 것. *진짜 열쇠는 매번 랜덤으로 바뀜
-### level 3
+### level 3 ♟
 여섯 개의 열쇠 중 하나의 진짜 열쇠를 찾아 문을 열고 나가기. 위에서 내려오는 체스말과 곰돌이를 조심할 것. *진짜 열쇠는 매번 랜덤으로 바뀜
+### Level Clear ⏰
+Congratulations! You're awake!
