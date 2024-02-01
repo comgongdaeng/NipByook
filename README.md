@@ -17,15 +17,15 @@ Good Luck!
 ## Made By(Team NipByook🍑)
 👤 comgongdaeng (comgongdaeng)
 
-Github: @comgongdaeng
+Github: [@comgongdaeng](https://github.com/comgongdaeng)
 
 👤 Hannah Kim (Gamddalki)
 
-Github: @Gamddalki
+Github: [@Gamddalki](https://github.com/Gamddalki)
 
 👤 cham1ng (cham1ng)
 
-Github: @cham1ng
+Github: [@cham1ng](https://github.com/cham1ng)
 
 ## 🎬 Scene
 ### Main 👻
